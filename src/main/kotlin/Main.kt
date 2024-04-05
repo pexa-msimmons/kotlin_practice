@@ -17,14 +17,18 @@ fun main() {
     println("Description: $description")
     println("Color: $color")
 
-    // Call function with default args
-    displayWeather()
-
     // Read only reference to mutable object
     val list: MutableList<String> = mutableListOf("Kotlin")
     list.add("Java")
     // Read only reference to immutable object
     val list2: List<String> = listOf("Kotlin")
+
+    loopList()
+    loopRange()
+    loopMap()
+
+    println(getSound())
+    println(getSound2())
 }
 
 /* Using args:
