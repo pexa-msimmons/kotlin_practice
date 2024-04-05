@@ -1,5 +1,3 @@
-package org.example
-
 fun main() {
     println("Hello World!")
 
@@ -18,6 +16,9 @@ fun main() {
     val (description, color) = updateWeather(8)
     println("Description: $description")
     println("Color: $color")
+
+    // Call function with default args
+    displayWeather()
 
     // Read only reference to mutable object
     val list: MutableList<String> = mutableListOf("Kotlin")
