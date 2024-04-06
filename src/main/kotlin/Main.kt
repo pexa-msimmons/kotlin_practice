@@ -29,6 +29,8 @@ fun main() {
 
     println(getSound())
     println(getSound2())
+
+    testExtensions()
 }
 
 /* Using args:
