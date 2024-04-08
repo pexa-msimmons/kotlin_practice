@@ -31,6 +31,8 @@ fun main() {
     println(getSound2())
 
     testExtensions()
+
+    lambdaExamples()
 }
 
 /* Using args:
