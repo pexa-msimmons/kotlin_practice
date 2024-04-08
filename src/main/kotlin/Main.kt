@@ -33,6 +33,8 @@ fun main() {
     testExtensions()
 
     lambdaExamples()
+
+    propertyExamples()
 }
 
 /* Using args:
