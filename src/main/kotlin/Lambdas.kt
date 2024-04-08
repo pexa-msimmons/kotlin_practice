@@ -81,4 +81,21 @@ fun lambdaExamples() {
     // --- maxBy ---
     val personWithMaxAge = people.maxBy { it.age }
     println("Person with max age: ${personWithMaxAge.name}")
+
+    // --- getOrElse ---
+    val four = map.getOrElse(4) {"four"}
+
+    // --- Member References ---
+    // Instead of defining lambdas in place, we can define a function then pass a reference to the function
+    // Useful for re-usability
+    fun isEven(i: Int): Boolean = i % 2 == 0
+    list.any(::isEven)
+
+    // --- run ---
+    // run executes the lambda and returns the result
+    val result = run {
+        println("Running lambda")
+        10
+    }
+    println(result)
 }
