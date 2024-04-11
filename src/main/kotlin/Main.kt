@@ -35,6 +35,8 @@ fun main() {
     lambdaExamples()
 
     propertyExamples()
+
+    oopExamples()
 }
 
 /* Using args:
