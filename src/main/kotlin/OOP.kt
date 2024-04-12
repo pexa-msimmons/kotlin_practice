@@ -132,6 +132,7 @@ fun <T : Number> printNumbers(generic: List<T>) {
     println(generic)
 }
 
+
 // --- Test ---
 
 fun oopExamples() {
