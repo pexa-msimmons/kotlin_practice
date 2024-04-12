@@ -95,6 +95,7 @@ class A private constructor() {
 
     companion object {
         // Equivalent to a final static variable
+        // ie. This is a compile-time constant
         const val MY_CONST = 5
 
         fun a(): Int = 1
@@ -106,6 +107,29 @@ class B private constructor() {
     companion object: Factory<B> {
         override fun create() = B()
     }
+}
+
+// --- Generics ---
+
+// In this case the function only accepts a list of integers
+fun printInts(ints: List<Int>) {
+    println(ints)
+}
+
+// We can make the function itself generic
+fun <T> printGeneric(generic: List<T>) {
+    println(generic)
+}
+
+// This function only accepts lists of non-nullable types
+// The generic type `T` extends the non-nullable type `Any`
+fun <T : Any> printGenericNonNullable(generic: List<T>) {
+    println(generic)
+}
+
+// This function only accepts lists of numbers
+fun <T : Number> printNumbers(generic: List<T>) {
+    println(generic)
 }
 
 // --- Test ---
