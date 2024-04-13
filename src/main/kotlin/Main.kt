@@ -39,6 +39,8 @@ fun main() {
     oopExamples()
 
     overloadExamples()
+
+    sequenceExamples()
 }
 
 /* Using args:
