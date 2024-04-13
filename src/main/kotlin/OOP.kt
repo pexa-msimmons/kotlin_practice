@@ -149,6 +149,9 @@ fun oopExamples() {
     println(foo2 == foo3) // true
     // If you need a reference equality check between data class objects
     println(foo2 === foo3) // false
+    // Data classes can be destructured via their members
+    val (first, second) = foo1
+    println("$first, $second")
 
     val person1 = Person("Sam", 20)
     val person2 = Person("Sam", 20)
