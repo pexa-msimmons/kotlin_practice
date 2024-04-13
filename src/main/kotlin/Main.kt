@@ -37,6 +37,8 @@ fun main() {
     propertyExamples()
 
     oopExamples()
+
+    overloadExamples()
 }
 
 /* Using args:
