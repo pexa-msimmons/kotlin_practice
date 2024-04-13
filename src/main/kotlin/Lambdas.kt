@@ -98,4 +98,13 @@ fun lambdaExamples() {
         10
     }
     println(result)
+
+    // --- let ---
+    fun getEmail(): String? = null
+    fun sendEmail(email: String) = println(email)
+    val email = getEmail()
+    if (email != null) sendEmail(email)
+    // With `let` we can execute the lambda only if the result is non-null
+    // More concise way of checking null with `if else`
+    getEmail()?.let {sendEmail(it)}
 }
